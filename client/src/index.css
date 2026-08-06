@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #d9e6ff;
+  --color-brand-200: #bcd3ff;
+  --color-brand-300: #8eb6ff;
+  --color-brand-400: #598eff;
+  --color-brand-500: #3366f2;
+  --color-brand-600: #2247d6;
+  --color-brand-700: #1c37ac;
+  --color-brand-800: #1c3188;
+  --color-brand-900: #1c2e6b;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+/* Visible keyboard focus everywhere (SRS section 9 - Accessibility). */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-brand-500;
+}
